@@ -589,5 +589,3 @@ else:
                 label="Descargar Prompts como TXT", data=combined_prompts_content.encode('utf-8'),
                 file_name=f"prompts_{estacion_seleccionada.replace(' ', '_')}.txt", mime="text/plain"
             )
-
-```
