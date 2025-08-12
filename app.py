@@ -1,14 +1,3 @@
-Claro, aquí tienes el código completo con la corrección de indentación.
-
-El error `IndentationError` ocurría porque varias líneas de código después de la declaración `else:` no estaban correctamente alineadas (les faltaban espacios al principio). He corregido eso y he revisado el resto del archivo para asegurar una indentación consistente.
-
-Simplemente reemplaza todo tu archivo `app.py` con este bloque de código.
-
------
-
-### Código `app.py` Corregido
-
-```python
 # -*- coding: utf-8 -*-
 
 import streamlit as st
