@@ -1,0 +1,7 @@
+streamlit
+pandas
+google-cloud-aiplatform
+vertexai
+PyPDF2
+python-docx
+openpyxl
