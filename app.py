@@ -493,9 +493,9 @@ def main():
             st.subheader("Configuración de Modelos de IA (Vertex AI)")
             col1, col2 = st.columns(2)
             with col1:
-                gen_model_name = st.selectbox("Modelo para Generación", ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-1.0-pro"])
-            with col2:
-                audit_model_name = st.selectbox("Modelo para Auditoría", ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-1.0-pro"])
+                gen_model_name = st.selectbox("Modelo para Generación", ["gemini-2.0-flash", "gemini-2.5-pro", "gemini-2.0-flash-lite"])
+            with col2: 
+                audit_model_name = st.selectbox("Modelo para Auditoría", ["gemini-2.0-flash-lite", "gemini-2.0-flash", "gemini-2.5-pro"])
 
             if st.button("Generar y Auditar Ítem(s)"):
                 criterios_para_preguntas = {
