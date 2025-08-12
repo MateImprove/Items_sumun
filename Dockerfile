@@ -19,7 +19,7 @@ COPY . .
 # Aunque Cloud Run usa la variable $PORT, es una buena práctica documentarlo.
 EXPOSE 8080
 
-# Paso 6: El comando para iniciar la aplicación.
-# Le dice a Streamlit que se ejecute en el puerto que Cloud Run le asigne ($PORT)
-# y deshabilita algunas protecciones que no son necesarias detrás del proxy de Google.
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=$PORT", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
+# Paso 6: El comando para iniciar la aplicación en formato "shell".
+# Este formato permite que la variable $PORT sea reemplazada por su valor (ej. 8080)
+# antes de que el comando se ejecute, solucionando el error.
+ENTRYPOINT streamlit run app.py --server.port=$PORT --server.enableCORS=false --server.enableXsrfProtection=false
